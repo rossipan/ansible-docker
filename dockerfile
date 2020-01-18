@@ -12,6 +12,5 @@ RUN yum clean all && \
     mv ~/kubectl /usr/bin/
 COPY ansible.cfg /etc/ansible/
 COPY ansible_plugins /usr/share/ansible_plugins/
-COPY update.sh /bin/
 COPY etcd* /bin/
 WORKDIR /etc/ansible
